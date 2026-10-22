@@ -1,0 +1,16 @@
+name: CI
+
+# Runs on every PR, docs-only included, so the e2e harness always has a check to
+# wait on and pr-auto-approve's workflow_run trigger always fires.
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "testbed CI ok"
