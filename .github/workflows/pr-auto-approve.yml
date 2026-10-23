@@ -140,7 +140,7 @@ jobs:
       # Pinned to a reviewed commit (the tip of feat/rounds-by-type, #90) because this
       # step receives the bot PAT. Move the pin deliberately; re-pin to a release tag
       # once #90 ships.
-      - uses: SteerSpec/strspc-pr-review@697c2ff12ad419c1cb269bcc9827a0308d5a011c
+      - uses: SteerSpec/strspc-pr-review@29f2b585e23338013cf9f355cf0fd2a5bc6628fb
         with:
           # Required: GitHub login of the bot account that will approve PRs.
           # Set this as a repo/org variable (vars.PR_AUTO_APPROVE_BOT_LOGIN) or
