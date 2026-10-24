@@ -137,9 +137,9 @@ jobs:
     steps:
       # @v1 tracks the latest v1.x release. Pin an exact @vX.Y.Z if you prefer
       # to upgrade manually.
-      # Pinned to the full commit of the v1.8.0 release (not a tag, which can move)
+      # Pinned to the full commit of the v1.8.1 release (not a tag, which can move)
       # because this step receives the bot PAT. Move the pin deliberately.
-      - uses: SteerSpec/strspc-pr-review@4f0fe829e2ba7d017f845f0eeb9660ba6278d2ae # v1.8.0
+      - uses: SteerSpec/strspc-pr-review@1f123fabf3acf45cf3b15543d587bcc7e6a036eb # v1.8.1
         with:
           # Required: GitHub login of the bot account that will approve PRs.
           # Set this as a repo/org variable (vars.PR_AUTO_APPROVE_BOT_LOGIN) or
